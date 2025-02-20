@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: springboot
+
+  security:
+    user:
+      name: admin
+      password: $2a$10$h3rVNHrU4dx6V4py1cgPfu4AGLt6n14jPsisAqQ5rg.lYUThb0FhG
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: 
+
+# initial users
+initial-users:
+  admin:
+    username: admin
+    password: admin
+
+  user:
+    username: user
+    password: user
