@@ -1,3 +1,7 @@
 spring:
     application:
         name: springboot
+
+jwt:
+    secret-key: qchtHLIxfPV7V13bwTGQ3Y1FXsztIBMsBq5mkfwwcBbeRyh6Dci2DHD3Gxbw8F5v4rCoAO4r3UDPYiaxMcsjbW2uatiGB9EXYCJkKXIxPpix4UZfdM97v0xPlLschByy8d6Ru55vLVlb5k6K8jKLYlwGeXlHChA0SqIOWOqatKGfEAiC1iJDGamiFwBtUKQsR4x4goJqGlR3PVhYaweltUsDWHzhSaSHLpESwQVr3PyFQGkkDWWC7jzwlg1vygxU
+    expiration-in-millis: 86400000
