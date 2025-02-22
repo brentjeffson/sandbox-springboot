@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sandbox.springboot.mapper.ProductMapper">
+
+    <select id="findById" resultType="Product" parameterType="Long">
+        SELECT * FROM products
+        WHERE id = #{id}    
+    </select>
+
+    <select id="findAll" resultType="Product">
+        SELECT * FROM products
+    </select>
+
+    <select id="addProduct" parameterType="Product" resultType="Long">
+        INSERT INTO products (name, price)
+        VALUES (#{name}, #{price})
+        RETURNING id
+    </select>
+
+</mapper>
