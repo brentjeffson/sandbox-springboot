@@ -13,7 +13,11 @@ public class SpringbootApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("Hello, world!");
+		Car van = new Car.Builder()
+			.setColor("Red")
+			.setEngine("Two Cyclinder")
+			.build();
+		System.out.println(van);
 	}
 
 }
